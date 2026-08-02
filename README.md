@@ -1,65 +1,20 @@
-# 24 Street Web V0
+# 24 Street Web — V1 Franquicia Urbana Gourmet
 
-Prototipo móvil-first para el QR del porta menú.
+Prototipo funcional móvil-first basado en la dirección visual aprobada el 31/07/2026.
 
-## Objetivo de esta versión
+## Incluye
+- Home responsive.
+- Hero con CTA a menú y reservas.
+- Accesos a menú, sucursales, Instagram y eventos.
+- Bloque institucional y franquicias.
+- Animaciones suaves y menú móvil.
 
-- Un QR específico por sucursal.
-- Acceso inmediato a menú digital, Google Maps, Instagram y eventos.
-- Base visual oscura, urbana e hipnótica, sin depender todavía de fotografías de producto.
-- Código simple: HTML, CSS y JavaScript puro.
+## Pendientes reales
+- Reemplazar enlaces provisionales por URLs oficiales.
+- Incorporar fotos originales de producto y sucursales.
+- Cargar datos exactos por sucursal.
+- Integrar reservas, Google Maps y menú dinámico.
+- Configurar analítica y UTMs.
 
-## Probar localmente
-
-Abrí `index.html` en el navegador o ejecutá un servidor local:
-
-```bash
-python -m http.server 8080
-```
-
-Luego visitá:
-
-- `http://localhost:8080/?s=S25`
-- `http://localhost:8080/?s=AB`
-- `http://localhost:8080/?s=CE`
-- `http://localhost:8080/?s=FL`
-
-## Arquitectura recomendada para producción
-
-```text
-/
-/menu
-/eventos
-/eventos/:slug
-/sucursales/:codigo
-/promos/:slug
-/go/:codigo
-```
-
-El QR del porta menú debe apuntar a una URL propia y permanente, por ejemplo:
-
-```text
-https://bar24street.com/go/S25
-```
-
-Esa ruta puede redirigir a:
-
-```text
-https://bar24street.com/?s=S25&utm_source=qr&utm_medium=portamenu&utm_campaign=acceso_digital&utm_content=S25
-```
-
-## Pendientes antes de publicar
-
-1. Confirmar Instagram, dirección, horarios y estado de cada sucursal.
-2. Cargar menú y precios vigentes.
-3. Reemplazar los bloques tipográficos por fotos reales de producto.
-4. Crear páginas reales de menú y eventos.
-5. Instalar GA4 y medir `menu_click`, `maps_click`, `instagram_click` y `event_click`.
-6. Optimizar imágenes en WebP/AVIF.
-7. Publicar en GitHub Pages para prueba y luego en Hostinger.
-
-## Repositorio recomendado
-
-`Parisluis/24street-web`
-
-No se modificó ningún repositorio existente.
+## Naming
+`20260731_WEB_home_ALL_franquicia_v1`
